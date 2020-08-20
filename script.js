@@ -3,6 +3,8 @@ window.onload = function() {
 }
 
 let userLogArray;
+let player1God = "";
+let player2God = "";
 let playerPowersArray = [];
 let placePawnArray = [];
 let moveAndBuildArray = [];
@@ -22,16 +24,22 @@ submitButton.addEventListener("click", event => {
   placePawnArray = [];
   moveAndBuildArray = [];
   winner = "";
+  godToPlay = "";
   userLog = userTextArea.value;
   userLogArray = userLog.split(String.fromCharCode(10));
   userLogArray.forEach(element => {
+    debugger;
     if (element.includes("Player")) {
       playerPowersArray.push(getGodName(element));
+      player1God = playerPowersArray[0];
+      player2God = playerPowersArray[1];
+      godToPlay = player1God;
     } else if (element.includes("PlacePawn")) {
-      placePawnArray.push(getInitialPlacement(element));
+      placePawnArray.push([godToPlay, getInitialPlacement(element)]);
     } else if (element.includes("Move=") || element.includes("Build=")) {
-      moveAndBuildArray.push(getMoveOrBuild(element));
+      moveAndBuildArray.push(godToPlay, getMoveOrBuild(element));
     }
+    godToPlay = getGodToPlay(element);
   })
   userLogArray.forEach(element => {
     if (element.includes("won")) {
