@@ -28,7 +28,7 @@ submitButton.addEventListener("click", event => {
   userLog = userTextArea.value;
   userLogArray = userLog.split(String.fromCharCode(10));
   userLogArray.forEach(element => {
-    debugger;
+    // debugger;
     if (element.includes("Player")) {
       playerPowersArray.push(getGodName(element));
       player1God = playerPowersArray[0];
