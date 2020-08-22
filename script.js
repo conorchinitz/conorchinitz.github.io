@@ -37,7 +37,7 @@ submitButton.addEventListener("click", event => {
     } else if (element.includes("PlacePawn")) {
       placePawnArray.push([godToPlay, getInitialPlacement(element)]);
     } else if (element.includes("Move=") || element.includes("Build=")) {
-      moveAndBuildArray.push(godToPlay, getMoveOrBuild(element));
+      moveAndBuildArray.push([godToPlay, getMoveOrBuild(element)]);
     }
     godToPlay = getGodToPlay(element);
   })
@@ -50,10 +50,10 @@ submitButton.addEventListener("click", event => {
   `Player 1 is ${playerPowersArray[0]}.\n` +
   `Player 2 is ${playerPowersArray[1]}.\n` +
   "\n" +
-  "Initial Placement:\n" +
+  "***Initial Placement***\n\n" +
   `${placePawnArray.join("\n")}\n` +
   "\n" +
-  "Moving and Building:\n" +
+  "***Moving and Building***\n\n" +
   `${moveAndBuildArray.join("\n" + "\n")}\n` +
   "\n" +
   `${winner} wins!`;
