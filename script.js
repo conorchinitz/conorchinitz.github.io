@@ -51,10 +51,10 @@ submitButton.addEventListener("click", event => {
   `Player 2 is ${playerPowersArray[1]}.\n` +
   "\n" +
   "Initial Placement:\n" +
-  `${placePawnArray.join(" \n")}\n` +
+  `${placePawnArray.join("\n")}\n` +
   "\n" +
   "Moving and Building:\n" +
-  `${moveAndBuildArray.join(" \n")}\n\n` +
+  `${moveAndBuildArray.join("\n")}\n` + "\n" +
   "\n" +
   `${winner} wins!`;
 });
