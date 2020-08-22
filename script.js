@@ -54,7 +54,7 @@ submitButton.addEventListener("click", event => {
   `${placePawnArray.join(" \n")}\n` +
   "\n" +
   "Moving and Building:\n" +
-  `${moveAndBuildArray.join(" \n")}\n`\n +
+  `${moveAndBuildArray.join(" \n")}\n\n` +
   "\n" +
   `${winner} wins!`;
 });
