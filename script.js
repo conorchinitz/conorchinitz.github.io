@@ -28,7 +28,6 @@ submitButton.addEventListener("click", event => {
   userLog = userTextArea.value;
   userLogArray = userLog.split(String.fromCharCode(10));
   userLogArray.forEach(element => {
-    // debugger;
     if (element.includes("Player")) {
       playerPowersArray.push(getPowerName(element));
       player1Power = playerPowersArray[0];
@@ -46,6 +45,16 @@ submitButton.addEventListener("click", event => {
       winner = getWinner(element);
     }
   })
+
+  placePawnArray = mergeLines(placePawnArray);
+  moveAndBuildArray = mergeLines(moveAndBuildArray);
+
+  placePawnArray = addColonAfterPowerName(placePawnArray);
+  moveAndBuildArray = addColonAfterPowerName(moveAndBuildArray);
+
+  placePawnArray = addPeriodAtEndOfLine(placePawnArray);
+  moveAndBuildArray = addPeriodAtEndOfLine(moveAndBuildArray);
+
   document.getElementById("cleaned_log").value =
   `Player 1 is ${playerPowersArray[0]}.\n` +
   `Player 2 is ${playerPowersArray[1]}.\n` +
