@@ -12,7 +12,7 @@ function getMoveOrBuild(string) {
 
     build = (string.substring(buildStartIndex, buildEndIndex));
     // return build.toUpperCase();
-        return build;
+    return build;
 
   }
   else {
