@@ -11,7 +11,8 @@ function getMoveOrBuild(string) {
     let buildEndIndex = getIndex(string, "(", 1, -1);
 
     build = (string.substring(buildStartIndex, buildEndIndex));
-    return build.toUpperCase();
+    // return build.toUpperCase();
+        return build;
 
   }
   else {
