@@ -3,8 +3,8 @@ window.onload = function() {
 }
 
 let userLogArray;
-let player1God = "";
-let player2God = "";
+let player1Power = "";
+let player2Power = "";
 let playerPowersArray = [];
 let placePawnArray = [];
 let moveAndBuildArray = [];
@@ -18,28 +18,28 @@ let userLog;
 // Select the submit button
 const submitButton = document.querySelector("#submit_button");
 
-// Run getGodName on the contents of userTextArea, output the result in the other box
+// Run getPowerName on the contents of userTextArea, output the result in the other box
 submitButton.addEventListener("click", event => {
   playerPowersArray = [];
   placePawnArray = [];
   moveAndBuildArray = [];
   winner = "";
-  godToPlay = "";
+  powerToPlay = "";
   userLog = userTextArea.value;
   userLogArray = userLog.split(String.fromCharCode(10));
   userLogArray.forEach(element => {
     // debugger;
     if (element.includes("Player")) {
-      playerPowersArray.push(getGodName(element));
-      player1God = playerPowersArray[0];
-      player2God = playerPowersArray[1];
-      godToPlay = player1God;
+      playerPowersArray.push(getPowerName(element));
+      player1Power = playerPowersArray[0];
+      player2Power = playerPowersArray[1];
+      powerToPlay = player1Power;
     } else if (element.includes("PlacePawn")) {
-      placePawnArray.push([godToPlay, getInitialPlacement(element)]);
+      placePawnArray.push([powerToPlay, getInitialPlacement(element)]);
     } else if (element.includes("Move=") || element.includes("Build=")) {
-      moveAndBuildArray.push([godToPlay, getMoveOrBuild(element)]);
+      moveAndBuildArray.push([powerToPlay, getMoveOrBuild(element)]);
     }
-    godToPlay = getGodToPlay(element);
+    powerToPlay = getPowerToPlay(element);
   })
   userLogArray.forEach(element => {
     if (element.includes("won")) {
