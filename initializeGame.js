@@ -1,7 +1,7 @@
-let player1God = undefined;
-let player2God = undefined;
+let player1Power = undefined;
+let player2Power = undefined;
 
-let godToPlay = undefined;
+let powerToPlay = undefined;
 
 let move = undefined;
 let build = undefined;

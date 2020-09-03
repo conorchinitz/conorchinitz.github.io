@@ -1,3 +1,3 @@
 function writeFormattedMoveAndBuild(){
-  console.log(`${godToPlay}: ${move}, ${build}.`)
+  console.log(`${powerToPlay}: ${move}, ${build}.`)
 }
