@@ -1,0 +1,60 @@
+------------------------------------------------
+---GAME START-----------------------------------
+------------------------------------------------
+------------------------------------------------
+---Player 1 = Castor & Pollux (Human)---------
+---Player 2 = Clio (Human)----------------------
+------------------------------------------------
+AiAiM-v.118 - Started for MOBILE - Seed = 0x65BC92EB519FD9E5 Benchmark = 83.4990081787109
+------------------------------------------------
+---Version = 1.116------------------------------
+---AIAI = v.118---------------------------------
+---PASS AND PLAY--------------------------------
+------------------------------------------------
+Game will be logged in: /storage/emulated/0/Android/data/com.Roxley.SantoriniGame/files/Log-20200901204552.txt
+Human - PlacePawn=d2 (Black (Castor & Pollux)  to add a Worker)
+Human - PlacePawn=c4 (Red (Clio)  to add a Worker)
+Human - PlacePawn=c3 (Red (Clio)  to add a Worker)
+Human - PlacePawn=b3 (Black (Castor & Pollux)  to move)
+Music Level = 1 -- 
+Human - Build=Tile-e3 using d2 (Black (Castor & Pollux)  to build a block or dome)
+Human - Build=Tile-d5 using c4 (Red (Clio)  to move)
+Music Level = 1 -- 
+Human - Move=c3->d4 (Red (Clio)  to build a block or dome)
+Human - Build=Tile-d5 (Black (Castor & Pollux)  to move)
+Music Level = 1 -- 
+Human - Move=d2->e3 (Black (Castor & Pollux)  to build or move another worker)
+Human - Build=Tile-d2 (Red (Clio)  to move)
+Music Level = 1 -- 
+Human - Move=d4->d3 (Red (Clio)  to build a block or dome)
+Human - Build=Tile-d4 (Black (Castor & Pollux)  to move)
+Music Level = 1 -- 
+Human - Build=Tile-d2 using e3 (Black (Castor & Pollux)  to build a block or dome)
+Human - Build=Tile-c5 using c4 (Red (Clio)  to move)
+Music Level = 1 -- 
+Human - Move=d3->d4 (Red (Clio)  to build a block or dome)
+Human - Build=Tile-e4 (Black (Castor & Pollux)  to move)
+Music Level = 1 -- 
+Human - Move=e3->d2 (Black (Castor & Pollux)  to build or move another worker)
+Human - Move=c4->c5 (Red (Clio)  to move)
+Music Level = 2 -- Level2 - MusicForward=0.4,MusicBackward=0
+Human - Move=d4->e4 (Red (Clio)  to build a block or dome)
+Human - Build=Tile-e5 (Black (Castor & Pollux)  to move)
+Music Level = 2 -- Level2 - MusicForward=0.4,MusicBackward=0
+Human - Build=Tile-e2 using d2 (Black (Castor & Pollux)  to build a block or dome)
+Human - Build=Tile-b5 using c5 (Red (Clio)  to move)
+Music Level = 2 -- Level2 - MusicForward=0.4,MusicBackward=0
+Human - Move=e4->d4 (Red (Clio)  to build a block or dome)
+Human - Build=Tile-e5 (Black (Castor & Pollux)  to move)
+Music Level = 2 -- Level2 - MusicForward=0.4,MusicBackward=0
+Human - Build=Tile-e2 using d2 (Black (Castor & Pollux)  to build a block or dome)
+Human - Build=Tile-b5 using c5 (Red (Clio)  to move)
+Music Level = 3 -- Level3 - MusicForward=0.8,MusicBackward=0
+Human - Move=d4->d5 (Red (Clio)  to build a block or dome)
+Human - Build=Tile-e5 (Black (Castor & Pollux)  to move)
+Music Level = 3 -- Level3 - MusicForward=0.8,MusicBackward=0
+Music Level = 3 -- Level3 - MusicForward=0.8,MusicBackward=0
+Human - Build=Tile-e2 using d2 (Black (Castor & Pollux)  to build a block or dome)
+Human - Build=Tile-b5 using c5 (Red (Clio)  to move)
+Music Level = 3 -- Level3 - MusicForward=0.8,MusicBackward=0
+Human - Move=d5->e5 (Red (Clio) won)
