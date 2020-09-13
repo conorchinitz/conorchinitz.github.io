@@ -1,0 +1,99 @@
+------------------------------------------------
+---GAME START-----------------------------------
+------------------------------------------------
+------------------------------------------------
+---Player 1 = Athena (Human)--------------------
+---Player 2 = Hippolyta (CPU5)------------------
+------------------------------------------------
+AiAiM-v.118 - Started for MOBILE - Seed = 0x848F5A4EA544449F Benchmark = 83.4990081787109
+------------------------------------------------
+---Version = 1.116------------------------------
+---AIAI = v.118---------------------------------
+---PASS AND PLAY--------------------------------
+------------------------------------------------
+Game will be logged in: /storage/emulated/0/Android/data/com.Roxley.SantoriniGame/files/Log-20200809220326.txt
+Human - PlacePawn=c2 (Black (Athena)  to add a Worker)
+Human - PlacePawn=c3 (Red (Hippolyta)  to add a Worker (Female Worker first))
+api.applyMove("b2");
+AiAiM-v.118 - PlacePawn=b2 (Red (Hippolyta)  to add a Worker)
+api.applyMove("d3");
+AiAiM-v.118 - PlacePawn=d3 (Black (Athena)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+Human - Move=c2->b3 (Black (Athena)  to build a block or dome)
+Human - Build=Tile-b4 (Red (Hippolyta)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+api.applyMove("d3->c4");
+AiAiM-v.118 - Move=d3->c4 (Red (Hippolyta)  to build a block or dome)
+api.applyMove("Tile-d5");
+AiAiM-v.118 - Build=Tile-d5 (Black (Athena)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+Human - Move=b3->c2 (Black (Athena)  to build a block or dome)
+Human - Build=Tile-d1 (Red (Hippolyta)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+api.applyMove("b2->c1");
+AiAiM-v.118 - Move=b2->c1 (Red (Hippolyta)  to build a block or dome)
+api.applyMove("Tile-d1");
+AiAiM-v.118 - Build=Tile-d1 (Black (Athena)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+Human - Move=c3->d2 (Black (Athena)  to build a block or dome)
+Human - Build=Tile-e1 (Red (Hippolyta)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+api.applyMove("c4->d3");
+AiAiM-v.118 - Move=c4->d3 (Red (Hippolyta)  to build a block or dome)
+api.applyMove("Tile-c4");
+AiAiM-v.118 - Build=Tile-c4 (Black (Athena)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+Human - Move=c2->b3 (Black (Athena)  to build a block or dome)
+Human - Build=Tile-a4 (Red (Hippolyta)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+api.applyMove("d3->c4");
+AiAiM-v.118 - Move=d3->c4 (Red (Hippolyta)  to build a block or dome)
+api.applyMove("Tile-d5");
+AiAiM-v.118 - Build=Tile-d5 (Black (Athena)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+Human - Move=d2->c3 (Black (Athena)  to build a block or dome)
+Human - Build=Tile-d2 (Red (Hippolyta)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+api.applyMove("c1->d2");
+AiAiM-v.118 - Move=c1->d2 (Red (Hippolyta)  to build a block or dome)
+api.applyMove("Tile-e2");
+AiAiM-v.118 - Build=Tile-e2 (Black (Athena)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+Human - Move=c3->b4 (Black (Athena)  to build a block or dome)
+Human - Build=Tile-b5 (Red (Hippolyta)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+api.applyMove("c4->b5");
+AiAiM-v.118 - Move=c4->b5 (Red (Hippolyta)  to build a block or dome)
+api.applyMove("Tile-c4");
+AiAiM-v.118 - Build=Tile-c4 (Black (Athena)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+Human - Move=b3->a4 (Black (Athena)  to build a block or dome)
+Human - Build=Tile-b3 (Red (Hippolyta)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+api.applyMove("d2->c3");
+AiAiM-v.118 - Move=d2->c3 (Red (Hippolyta)  to build a block or dome)
+api.applyMove("Tile-d4");
+AiAiM-v.118 - Build=Tile-d4 (Black (Athena)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+Human - Move=b4->c5 (Black (Athena)  to build a block or dome)
+Human - Build=Tile-b4 (Red (Hippolyta)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+api.applyMove("c3->d4");
+AiAiM-v.118 - Move=c3->d4 (Red (Hippolyta)  to build a block or dome)
+api.applyMove("Tile-c3");
+AiAiM-v.118 - Build=Tile-c3 (Black (Athena)  to move)
+Music Level = 1 -- Level3 - MusicForward=0.8,MusicBackward=0
+Human - Move=a4->b3 (Black (Athena)  to build a block or dome)
+Human - Build=Tile-c2 (Red (Hippolyta)  to move)
+Music Level = 3 -- Level3 - MusicForward=1,MusicBackward=0
+api.applyMove("b5->c4");
+AiAiM-v.118 - Move=b5->c4 (Red (Hippolyta)  to build a block or dome)
+api.applyMove("Tile-d5");
+AiAiM-v.118 - Build=Tile-d5 (Black (Athena)  to move)
+Music Level = 3 -- Level3 - MusicForward=1,MusicBackward=0
+Human - Move=b3->c2 (Black (Athena)  to build a block or dome)
+Human - Build=Tile-d2 (Red (Hippolyta)  to move)
+Music Level = 3 -- Level3 - MusicForward=1,MusicBackward=0
+api.applyMove("c4->d5");
+AiAiM-v.118 - Move=c4->d5 (Red (Hippolyta) won)
+api.applyMove("Tile-c4");
