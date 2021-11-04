@@ -1,3 +1,5 @@
+// The log files list the power to play at the end of each line. Ex: if a certain line logs player 2's build, then at the end of that line it will say "player 1 to play."
+
 function getPowerToPlay(string) {
   if (string.includes(player1Power)) {
     // console.log("Power to play is " + player1Power);

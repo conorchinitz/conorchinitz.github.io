@@ -20,6 +20,7 @@ const submitButton = document.querySelector("#submit_button");
 
 // Run getPowerName on the contents of userTextArea, output the result in the other box
 submitButton.addEventListener("click", event => {
+  // Given that I define all these variables here, do I really need to also define them globally on lines 5-11? Probably not...
   playerPowersArray = [];
   player1Power = "";
   player2Power = "";
@@ -27,6 +28,7 @@ submitButton.addEventListener("click", event => {
   moveAndBuildArray = [];
   winner = "";
   powerToPlay = "";
+  moveNumber = 0;
   userLog = userTextArea.value;
   userLogArray = userLog.split(String.fromCharCode(10));
 
@@ -40,11 +42,19 @@ submitButton.addEventListener("click", event => {
     }
   })
 
+  // Extract all the coordinates for placement, moving, and building from the log file.
   userLogArray.forEach(element => {
     if (element.includes("PlacePawn")) {
       placePawnArray.push([powerToPlay, getInitialPlacement(element)]);
-    } else if (element.includes("Move=") || element.includes("Build=")) {
-      moveAndBuildArray.push([powerToPlay, getMoveOrBuild(element)]);
+    } else if (element.includes("Move=")) {
+      if (powerToPlay === player1Power) {
+        moveNumber =+ 1;
+        moveAndBuildArray.push([moveNumber + "."]);
+      }
+      moveAndBuildArray.push([powerToPlay, getMove(element)]);
+    }
+    else if (element.includes("Build=")) {
+      moveAndBuildArray.push([powerToPlay, getBuild(element)]);
     }
     powerToPlay = getPowerToPlay(element);
   })
@@ -55,6 +65,7 @@ submitButton.addEventListener("click", event => {
     }
   })
 
+  // Combine moves and builds into a single unit.
   placePawnArray = mergeLines(placePawnArray);
   moveAndBuildArray = mergeLines(moveAndBuildArray);
 
@@ -77,6 +88,8 @@ submitButton.addEventListener("click", event => {
   for (i = 0; i < moveAndBuildArray.length; i++) {
   moveAndBuildArray[i] = moveAndBuildArray[i].join(" ");
   };
+
+  // Display the results of all our hard work in the output textbox.
 
   document.getElementById("cleaned_log").value =
   "--- Power Selection ---\n\n" +
