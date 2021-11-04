@@ -14,7 +14,7 @@ function getMove(string)
   return move;
 }
 
-function getMoveOrBuild(string) {
+function getBuild(string) {
   //Get rid of these magic numbers. (Use regex instead?)
   let buildStartIndex = getIndex(string, "Build", 5, 6);
   let buildEndIndex = getIndex(string, "(", 1, -1);
@@ -22,5 +22,11 @@ function getMoveOrBuild(string) {
   let build = (string.substring(buildStartIndex, buildEndIndex));
   // Magic number
   build = build.slice(5);
-  return build.toUpperCase();
+
+
+  file = build[0];
+  rank = build[1];
+  boardBlocks[file][rank] += 1;
+
+  return build.toUpperCase() + `(${boardBlocks[file][rank]})`;
 }

@@ -9,6 +9,7 @@ let playerPowersArray = [];
 let placePawnArray = [];
 let moveAndBuildArray = [];
 let winner = "";
+let moveNumber = 0;
 
 // Select the box where the user pastes their log file
 userTextArea = document.querySelector("#user_text_area");
@@ -28,7 +29,6 @@ submitButton.addEventListener("click", event => {
   moveAndBuildArray = [];
   winner = "";
   powerToPlay = "";
-  moveNumber = 0;
   userLog = userTextArea.value;
   userLogArray = userLog.split(String.fromCharCode(10));
 
@@ -48,8 +48,8 @@ submitButton.addEventListener("click", event => {
       placePawnArray.push([powerToPlay, getInitialPlacement(element)]);
     } else if (element.includes("Move=")) {
       if (powerToPlay === player1Power) {
-        moveNumber =+ 1;
-        moveAndBuildArray.push([moveNumber + "."]);
+        moveNumber += 1;
+        moveAndBuildArray.push([moveNumber]);
       }
       moveAndBuildArray.push([powerToPlay, getMove(element)]);
     }
@@ -100,7 +100,7 @@ submitButton.addEventListener("click", event => {
   `${placePawnArray.join("\n")}\n` +
   "\n" +
   "--- Moving and Building ---\n\n" +
-  `${moveAndBuildArray.join("\n" + "\n")}\n` +
+  `${moveAndBuildArray.join("\n")}\n` +
   "\n" +
   `${winner} wins!`;
 });

@@ -1,13 +1,18 @@
 function addColonAfterPowerName(array) {
   array.forEach(line => {
-    line[0] = line[0].concat(":");
+    // This if statement is a bad way to handle this. Implement with a better approach later.
+    if (typeof line[0] == "string") {
+      line[0] = line[0].concat(":");
+    }
   });
   return array;
 }
 
 function addCommaAfterFirstWorkerPlacement(array) {
   array.forEach(line => {
-    line[1] = line[1].concat(",");
+    if (line[1]) {
+      line[1] = line[1].concat(",");
+    }
   })
   return array;
 }
@@ -35,7 +40,10 @@ function addCommaAfterMove(array) {
 
 function addPeriodAtEndOfLine(array) {
   array.forEach(line => {
-      line[line.length-1] = line[line.length-1].concat(".");
+      // This if statement is a bad way to handle this. Implement with a better approach later.
+      if (line[line.length - 1]) {
+        line[line.length - 1] = line[line.length - 1] + ".";
+      }
   })
   return array;
 }
